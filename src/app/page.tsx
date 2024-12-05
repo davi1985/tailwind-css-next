@@ -1,8 +1,12 @@
 import { Mail } from 'lucide-react'
 
 import * as FileInput from '@/components/Form/FileInput'
+
+import { Select } from '@/components/Form/Select'
 import { SettingsTabs } from '@/components/SettingsTabs'
 import { Input } from '../components/Form/Input'
+import { SelectItem } from '@/components/Form/Select/SelectItem'
+import { countries, timezones } from '@/mock'
 
 const Home = () => (
   <>
@@ -113,7 +117,11 @@ const Home = () => (
             Country
           </label>
 
-          <div></div>
+          <Select placeholder="Select a country...">
+            {countries.map(({ name, value, flag }) => (
+              <SelectItem key={value} value={value} text={`${flag}  ${name}`} />
+            ))}
+          </Select>
         </div>
 
         <div className="grid grid-cols-form gap-3 pt-5">
@@ -124,7 +132,11 @@ const Home = () => (
             TimeZone
           </label>
 
-          <div></div>
+          <Select placeholder="Select a timezone...">
+            {timezones.map(({ name, value }) => (
+              <SelectItem key={value} value={value} text={`⏱️ ${name}`} />
+            ))}
+          </Select>
         </div>
 
         <div className="grid grid-cols-form gap-3 pt-5">

@@ -16,7 +16,7 @@ const Control = (props: InputControlProps) => (
 
 const Root = (props: InputRootProps) => (
   <div
-    className="mx-1 flex w-full items-center gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm"
+    className="flex w-full items-center gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm"
     {...props}
   />
 )
