@@ -1,12 +1,13 @@
-import { Mail } from 'lucide-react'
+import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 
 import * as FileInput from '@/components/Form/FileInput'
 
 import { Select } from '@/components/Form/Select'
-import { SettingsTabs } from '@/components/SettingsTabs'
-import { Input } from '../components/Form/Input'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
+import { SettingsTabs } from '@/components/SettingsTabs'
 import { countries, timezones } from '@/mock'
+import { Input } from '../components/Form/Input'
+import { TextArea } from '@/components/Form/Textarea'
 
 const Home = () => (
   <>
@@ -147,7 +148,60 @@ const Home = () => (
             </span>
           </label>
 
-          <div></div>
+          <div className="space-y-3">
+            <div className="grid grid-cols-2 gap-3">
+              <Select placeholder="" defaultValue="normal">
+                <SelectItem value="normal" defaultChecked text="Normal Text" />
+                <SelectItem value="md" defaultChecked text="Markdown" />
+              </Select>
+
+              <div className="flex items-center gap-1">
+                <button
+                  type="button"
+                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                >
+                  <Bold strokeWidth={3} className="h-4 w-4 text-zinc-500" />
+                </button>
+
+                <button
+                  type="button"
+                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                >
+                  <Italic strokeWidth={3} className="h-4 w-4 text-zinc-500" />
+                </button>
+
+                <button
+                  type="button"
+                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                >
+                  <Link strokeWidth={3} className="h-4 w-4 text-zinc-500" />
+                </button>
+
+                <button
+                  type="button"
+                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                >
+                  <List strokeWidth={3} className="h-4 w-4 text-zinc-500" />
+                </button>
+
+                <button
+                  type="button"
+                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                >
+                  <ListOrdered
+                    strokeWidth={3}
+                    className="h-4 w-4 text-zinc-500"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <TextArea
+              id="bio"
+              defaultValue="I'm software engineer specializing in frontend development using technologies like React, Next.js , and TypeScript."
+              className="min-h-[120px] w-full resize-y rounded-lg border border-zinc-300 px-3 py-2 shadow-sm"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-form gap-3 pt-5">
