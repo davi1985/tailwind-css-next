@@ -17,7 +17,7 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode
 }>) => (
-  <html lang="en" className="antialiased">
+  <html lang="en" className="antialiased" suppressHydrationWarning>
     <body className={inter.className}>
       <div className="grid min-h-screen grid-cols-app">
         <Sidebar />
