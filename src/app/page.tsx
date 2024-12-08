@@ -158,35 +158,35 @@ const Home = () => (
               <div className="flex items-center gap-1">
                 <button
                   type="button"
-                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                  className="rounded-md p-2 outline-none focus-within:border-violet-300 focus-within:ring-4 focus-within:ring-violet-100 hover:bg-zinc-50"
                 >
                   <Bold strokeWidth={3} className="h-4 w-4 text-zinc-500" />
                 </button>
 
                 <button
                   type="button"
-                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                  className="rounded-md p-2 outline-none focus-within:border-violet-300 focus-within:ring-4 focus-within:ring-violet-100 hover:bg-zinc-50"
                 >
                   <Italic strokeWidth={3} className="h-4 w-4 text-zinc-500" />
                 </button>
 
                 <button
                   type="button"
-                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                  className="rounded-md p-2 outline-none  focus-within:border-violet-300 focus-within:ring-4 focus-within:ring-violet-100 hover:bg-zinc-50"
                 >
                   <Link strokeWidth={3} className="h-4 w-4 text-zinc-500" />
                 </button>
 
                 <button
                   type="button"
-                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                  className="rounded-md p-2 outline-none focus-within:border-violet-300 focus-within:ring-4 focus-within:ring-violet-100 hover:bg-zinc-50"
                 >
                   <List strokeWidth={3} className="h-4 w-4 text-zinc-500" />
                 </button>
 
                 <button
                   type="button"
-                  className="rounded-r-md p-2 hover:bg-zinc-50"
+                  className="rounded-md p-2 outline-none focus-within:border-violet-300 focus-within:ring-4 focus-within:ring-violet-100 hover:bg-zinc-50"
                 >
                   <ListOrdered
                     strokeWidth={3}
@@ -225,7 +225,7 @@ const Home = () => (
         <div className="flex items-center justify-end gap-2 pt-5">
           <button
             type="button"
-            className="rounded-lg border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-slate-50"
+            className="rounded-lg  border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-slate-50"
           >
             Cancel
           </button>

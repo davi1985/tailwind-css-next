@@ -11,7 +11,7 @@ export type SelectProps = PrimitiveSelect.SelectProps & {
 
 export const Select = ({ placeholder, children, ...props }: SelectProps) => (
   <PrimitiveSelect.Root {...props}>
-    <PrimitiveSelect.Trigger className="flex h-11 w-full items-center  justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholder]:text-zinc-600">
+    <PrimitiveSelect.Trigger className="flex h-11 w-full items-center  justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm outline-none focus:border-violet-300 focus:ring-4 focus:ring-violet-100 data-[placeholder]:text-zinc-600">
       <PrimitiveSelect.Value placeholder={placeholder} className="text-black" />
 
       <PrimitiveSelect.Icon>
