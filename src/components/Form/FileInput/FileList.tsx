@@ -16,7 +16,7 @@ export const FileList = () => {
           size={size}
           key={name}
           onRemove={onRemoveFile}
-          state="error"
+          state="complete"
         />
       ))}
     </div>
